@@ -1,18 +1,16 @@
-# hello-express
+# UI Research Server
 
-A server that serves a webpage, its resources, and some data
+This research project aims to develop a tool that allows the identification of the interactive elements of the webpage by event listeners.
+
+The tool outputs the x-path and visual position of the interactive elements.
 
 
-## Your Project
+## Requirements
 
-On the front-end,
+The server is run on a node.js environment and requires the puppeteer package to be installed.
 
-- Edit `views/index.html` to change the content of the webpage
-- `public/client.js` is the javacript that runs when you load the webpage
-- `public/style.css` is the styles for `views/index.html`
-- Drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
+## How it works?
+On the back-end, the tool uses puppeteer to open a ["Chrome Developer Tools Protocol" session](https://chromedevtools.github.io/devtools-protocol/)
 
 - your app starts at `server.js`
 - add frameworks and packages in `package.json`
