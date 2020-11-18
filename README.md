@@ -18,7 +18,7 @@ The API call is a GET request to the /run directory with 5 params
 
 An example URL call is _https://ui-research-romeno.glitch.me/run?api_key=nyuaddauyn&url=https://google.com&filtered=false&screenHeight=700&screenWidth=1000_
 
-The call would return a json object with an key called "listeners" that contains the array of listeners
+The call would return a json object with an key called "listeners" that contains the array of listeners. A sample response is below with only one interactive element in the array:
 ```json
 {
    "listeners":[
@@ -67,7 +67,7 @@ The call would return a json object with an key called "listeners" that contains
             "bottom":38,
             "left":10
          }
-      }, ...
+      }
    }
 ```
 
@@ -89,5 +89,3 @@ It then carries out the following:
     - This xpath is calculated using a function taken from [stackoverflow](https://stackoverflow.com/a/5178132)
   - visual coordinates, dimensions and xpath is added to the attributes of the element object
 - The array of element objects is output that has the event listener type, visual coordinates, dimensions and xpath and more info of each interactive element
-
-( ᵔ ᴥ ᵔ )
